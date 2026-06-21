@@ -1,3 +1,5 @@
+export type MealCategory = "Breakfast" | "Lunch" | "Dinner" | "Snack";
+
 export interface Food {
   id: string;
   name: string;
@@ -11,6 +13,7 @@ export interface Food {
 export interface LogEntry {
   id: number;
   date: string;
+  meal?: MealCategory;
   food_name: string;
   calories: number;
   protein: number;
