@@ -58,10 +58,15 @@ export default function Home() {
   const [selectedMeal, setSelectedMeal] = useState<MealCategory>(getDefaultMeal);
 
   const fetchLog = useCallback(async () => {
-    const res = await fetch(`/api/log?date=${today}`);
-    const data = await res.json();
-    setEntries(data);
-    setLoading(false);
+    try {
+      const res = await fetch(`/api/log?date=${today}`);
+      const data = await res.json();
+      if (Array.isArray(data)) setEntries(data);
+    } catch {
+      // leave entries as empty array on network/parse failure
+    } finally {
+      setLoading(false);
+    }
   }, [today]);
 
   useEffect(() => {

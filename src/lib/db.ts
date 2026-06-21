@@ -7,7 +7,9 @@ interface DbStore {
   next_id: number;
 }
 
-const DB_DIR = path.join(process.cwd(), "database");
+const DB_DIR = process.env.VERCEL
+  ? "/tmp/calorie-tracker"
+  : path.join(process.cwd(), "database");
 const DB_PATH = path.join(DB_DIR, "log.json");
 
 function load(): DbStore {
