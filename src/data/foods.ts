@@ -1,0 +1,28 @@
+import { Food } from "@/types";
+
+export const FOODS: Food[] = [
+  { id: "chicken-breast", name: "Chicken Breast", calories: 165, protein: 31, carbs: 0, fat: 3.6, serving: "100g" },
+  { id: "white-rice", name: "White Rice", calories: 130, protein: 2.7, carbs: 28, fat: 0.3, serving: "100g cooked" },
+  { id: "eggs", name: "Eggs", calories: 70, protein: 6, carbs: 0.6, fat: 5, serving: "1 large" },
+  { id: "banana", name: "Banana", calories: 105, protein: 1.3, carbs: 27, fat: 0.4, serving: "1 medium" },
+  { id: "oats", name: "Oats", calories: 150, protein: 5, carbs: 27, fat: 2.5, serving: "40g dry" },
+  { id: "salmon", name: "Salmon", calories: 208, protein: 20, carbs: 0, fat: 13, serving: "100g" },
+  { id: "broccoli", name: "Broccoli", calories: 34, protein: 2.8, carbs: 7, fat: 0.4, serving: "100g" },
+  { id: "greek-yogurt", name: "Greek Yogurt", calories: 59, protein: 10, carbs: 3.6, fat: 0.4, serving: "100g" },
+  { id: "almonds", name: "Almonds", calories: 161, protein: 6, carbs: 6, fat: 14, serving: "28g (1oz)" },
+  { id: "apple", name: "Apple", calories: 95, protein: 0.5, carbs: 25, fat: 0.3, serving: "1 medium" },
+  { id: "sweet-potato", name: "Sweet Potato", calories: 86, protein: 1.6, carbs: 20, fat: 0.1, serving: "100g" },
+  { id: "ground-beef", name: "Ground Beef (80/20)", calories: 254, protein: 17, carbs: 0, fat: 20, serving: "100g" },
+  { id: "tuna", name: "Canned Tuna", calories: 116, protein: 26, carbs: 0, fat: 1, serving: "100g drained" },
+  { id: "whole-milk", name: "Whole Milk", calories: 149, protein: 8, carbs: 12, fat: 8, serving: "240ml" },
+  { id: "bread", name: "White Bread", calories: 79, protein: 3, carbs: 15, fat: 1, serving: "1 slice" },
+  { id: "orange", name: "Orange", calories: 62, protein: 1.2, carbs: 15, fat: 0.2, serving: "1 medium" },
+  { id: "peanut-butter", name: "Peanut Butter", calories: 188, protein: 8, carbs: 6, fat: 16, serving: "2 tbsp" },
+  { id: "quinoa", name: "Quinoa", calories: 120, protein: 4.4, carbs: 21, fat: 1.9, serving: "100g cooked" },
+  { id: "avocado", name: "Avocado", calories: 160, protein: 2, carbs: 9, fat: 15, serving: "100g" },
+  { id: "cottage-cheese", name: "Cottage Cheese", calories: 98, protein: 11, carbs: 3.4, fat: 4.3, serving: "100g" },
+  { id: "pasta", name: "Pasta", calories: 131, protein: 5, carbs: 25, fat: 1.1, serving: "100g cooked" },
+  { id: "black-beans", name: "Black Beans", calories: 132, protein: 8.9, carbs: 24, fat: 0.5, serving: "100g cooked" },
+  { id: "protein-bar", name: "Protein Bar", calories: 210, protein: 20, carbs: 22, fat: 7, serving: "1 bar" },
+  { id: "orange-juice", name: "Orange Juice", calories: 112, protein: 1.7, carbs: 26, fat: 0.5, serving: "240ml" },
+];
